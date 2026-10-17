@@ -1,97 +1,97 @@
-> ## ⚠️ 本仓库已合并
->
-> 内容已并入 **[ai-drama-master-suite](https://github.com/YGtemple/ai-drama-master-suite)** 的 `cases/ai-film-production/` 目录。
->
-> 理由：那个仓库的 `SKILL.md`（125 KB）是方法论定义，本仓库是同一套方法在真实片子上的使用记录。定义和案例放一起才看得到完整链路。
->
-> 本仓库保留为历史归档，不再更新。
+<div align="right">
+
+**[English](README.md)** · [简体中文](README.zh-CN.md)
+
+</div>
+
+# ai-film-production
+
+Production methodology for an AI content channel — 44 knowledge shorts, plus one short film taken through an eight-stage pipeline.
+
+<sub>~250 text artifacts · 48 finished films (6.79 GB, not included)</sub>
 
 ---
 
-# ai-film-production · AI 影视内容生产方法论实录
+## What this is
 
-> 一句话简介：44 集知识短片的选题策划与旁白脚本，以及一部 AI 短片的完整八阶段管线产物——用真实项目记录 AI 影视生产怎么落地。
+"像素档案馆" is a channel of knowledge shorts, each explaining the engineering behind an everyday object:
 
-素材规模：约 **250 个文本产物**（策划文案 / 旁白脚本 / 阶段文档），配套 48 集成片 6.79 GB（未上传）。
+> Why are manhole covers round · Why high-speed trains have no seatbelts · Why coins have ridged edges · Why the microwave door is really a wire mesh · Why bicycle wheels hang from their top spokes rather than resting on the bottom ones
 
-## 一、这是什么
+8.5–9.6 minutes each, 1080p landscape, fully animated. 48 finished films.
 
-「像素档案馆」是一个《结构小史》系列知识短片账号——每集讲一个日常物件背后的工程原理：
+What is archived here is the **production methodology** — not the films, but the documents that let 44 episodes be made to a consistent standard.
 
-> 井盖为什么是圆的 · 高铁为什么没有安全带 · 硬币边缘为什么是锯齿 · 微波炉那扇玻璃门其实是铁丝网做的盾 · 自行车那几十根细钢丝不是撑住轮子，轮子是吊在最上面那几根上
-
-单集 8.5–9.6 分钟，横屏 1080p，全程动效。已产出 **48 集成片**。
-
-这里归档的是**生产方法论**——不是成片本身，而是让 44 集能按统一标准稳定产出的一套流程文档。
-
-## 二、三层内容结构
+## Structure
 
 ```
-01_账号策划/   47 个文件 —— 每集的抖音发布文案与账号设置
-02_选题脚本/  187 个文件 —— 旁白脚本 + 选题调研 + 模型知识库
-北平的雪/     203 个文件 —— 一部 AI 短片的完整管线产物
+01_账号策划/    47 files — per-episode publishing copy and account setup
+02_选题脚本/   187 files — narration scripts, topic research, model reference
+北平的雪/      203 files — one short film, complete pipeline artifacts
 ```
 
-### 北平的雪 — 一部 AI 短片的完整八阶段管线
+### 北平的雪 — an eight-stage pipeline, end to end
 
-这是一个**独立的短片项目**（非知识短片系列），却完整走完了 AI STUDIO 洋子那套八阶段流程：
+A separate project (not part of the shorts series) that ran the full eight-stage process:
 
-```
-00_research/  historical-research-v001.md     13.3 KB   史料调研
-01_story/     synopsis-v001.md                 5.7 KB   故事概念锚定
-              characters-v001.md              13.2 KB   角色设定
-              treatment-v001.md                9.3 KB   分场大纲
-02_script/    screenplay-v001.md              15.5 KB   剧本
-              screenplay-timing-audit-v001.md  1.8 KB   时长复核
-03_assets/    asset-registry-v001.md           4.0 KB   资产登记
-04_prompts/   performance-master-v001.md      11.8 KB   表演总谱
-```
-
-每份文档都带 `-v001` 版本号，符合「进入下一阶段只读取已确认-当前版本」的管线约定。
-
-## 三、值得单独说的两份文档
-
-### synopsis-v001.md — 三层结构的故事设计
-
-**第一结构：故事（表层叙事）**——具体到时间地点人物事件。
-
-**第二结构：隐喻（核心视觉隐喻）**——四个意象各有 setup→payoff：
-
-| 意象 | 登场 | 收束 |
+| Stage | Artifact | Size |
 |---|---|---|
-| 雪 | 落在被砍的树桩上、半块窝头上 | 雪融，雪水顺瓦当滴落，孩子哈出的白气里第一次有了笑声 |
-| 被砍的老槐树与树桩 | 胡同口百年古槐被砍「清扫射界」 | 树桩边支起解放军的粥棚，雪后初晴、新芽将生 |
-| 半块窝头 | 父亲被抓前塞进墩子手里 | 入城后开仓分粮，窝头变成白面馒头、年夜饺子 |
-| 永定门城门洞 | 父亲被抓时在门洞阴影里被拖向城外 | 解放大军从同一门洞、迎着光入城 |
+| 00 research | `historical-research-v001.md` | 13.3 KB |
+| 01 story | `synopsis-v001.md` | 5.7 KB |
+| | `characters-v001.md` | 13.2 KB |
+| | `treatment-v001.md` | 9.3 KB |
+| 02 script | `screenplay-v001.md` | 15.5 KB |
+| | `screenplay-timing-audit-v001.md` | 1.8 KB |
+| 03 assets | `asset-registry-v001.md` | 4.0 KB |
+| 04 prompts | `performance-master-v001.md` | 11.8 KB |
 
-**第四项尤其值得看**：同一个空间母题，前为黑暗通道、后为光明之门。这是在概念阶段就把视觉反转设计好了。
+Every artifact carries a `-v001` suffix, matching the pipeline rule that each stage reads only the confirmed current version.
 
-**第三结构：意图**——审美 / 语境 / 观念 / 立场 / **习惯手势**五层。第五层写了三个具体动作（把妹妹的手塞进袖筒、听皮靴声就缩肩、结尾踮脚拢手喊爹），直接给表演阶段提供可执行依据。
+## Two documents worth reading closely
 
-### screenplay-timing-audit-v001.md — 时长复核表
+### synopsis-v001.md — story design in three layers
 
-| 场 | 04 预算 | 台词字数(约) | 05 初估 | 偏差 | 偏差原因 / 08 处理建议 |
+**Layer one, story.** Concrete: time, place, people, events.
+
+**Layer two, metaphor.** Four images, each with a setup and a payoff:
+
+| Image | Set up | Paid off |
+|---|---|---|
+| Snow | falls on felled tree stumps and half a steamed bun | thaws; water drips from the eaves; the child's breath carries laughter for the first time |
+| The felled locust tree | the century-old tree at the alley mouth is cut to clear a firing line | a PLA soup kitchen stands beside the stump; new shoots after the snow |
+| Half a steamed bun | pressed into the boy's hand as his father is taken | grain is distributed on entry; the bun becomes white flour and New Year dumplings |
+| The Yongdingmen gate arch | the father is dragged out through its shadow | the army enters through the same arch, into the light |
+
+The fourth is the one to study: the same spatial motif, first a dark passage, then a lit gate. The visual inversion was designed at concept stage, so the storyboard stage only has to execute it.
+
+**Layer three, intent.** Five sub-layers: aesthetic, context, thesis, stance, and **habitual gestures**. The fifth lists three concrete actions (pushing his sister's hands into his sleeve, hunching at the sound of boots, rising on tiptoe to call out at the end), which gives the performance stage something executable instead of something to reinterpret.
+
+### screenplay-timing-audit-v001.md — a timing table
+
+| Scene | Budget | Dialogue chars | Estimate | Delta | Cause / handling |
 |---|---|---|---|---|---|
-| 1 雪夜抓夫 | 30 | 96 | 31 | +1 | 台词密、多人喊话；08 让母亲哭喊与拖走动作并行 |
-| 9 傅作义抉择 | 30 | 119 | 32 | +2 | 全对白场；08 将邓宝珊长句提速或删 4–6 字 |
-| 12 入城团圆 | 30 | 51 | 33 | +3 | 装备展示占时；08 用 2–3 个快切带过装甲骑兵 |
+| 1 Night abduction | 30 | 96 | 31 | +1 | dense dialogue, overlapping shouts; let the mother's cry run parallel to the dragging |
+| 9 Fu Zuoyi's decision | 30 | 119 | 32 | +2 | all-dialogue scene; speed up or cut 4–6 characters from one speech |
+| 12 Entry and reunion | 30 | 51 | 33 | +3 | equipment display eats time; cut across armour and cavalry in 2–3 shots |
 
-12 场戏，每场目标 30 秒，总目标 360 秒。初估 365 秒，偏差 +5 秒（1.4%），在容差内所以「自动登记」——**容差规则是预先定好的**（较大者 5 秒或 10%），不是事后找补。
+Twelve scenes, 30 seconds each, 360 seconds total. The estimate came to 365 — a 1.4% delta, inside tolerance, so it was auto-filed. **The tolerance rule was fixed in advance** (5 seconds or 10%, whichever is larger), not invented afterwards.
 
-偏差列里最有用的是最后一栏「08 处理建议」：**不加快整体语速，靠动作/台词并行与快切吸收**。
+The most useful column is the last one: **the fix was decided at estimate time**, not discovered during the edit.
 
-## 四、这套流程的可复用部分
+## What transfers
 
-**1. 意象要在概念阶段就设计好 setup→payoff**
-**2. 创作意图分五层写**——第五层「习惯手势」给表演阶段提供可执行依据
-**3. 时长用「预估表 + 容差规则」管理**——容差规则预先定好，不是事后找补
-**4. 版本号贯穿全流程**——`-v001` 配合「只读取已确认版本」删掉歧义
-**5. 成片规格写成可 ffprobe 核对的数字**——画幅 1920×1080、H.264 Baseline、yuv420p、AAC-LC 48kHz
+1. **Design the payoff of every image at concept stage.** Otherwise a prop ends up unused and nobody notices until the cut.
+2. **Write intent in five layers.** The fifth gives the performance stage executable instructions.
+3. **Manage duration with an estimate table and a pre-agreed tolerance.**
+4. **Version every artifact.** `-v001` plus a read-only-current-version rule removes ambiguity after several rounds.
+5. **State delivery specs as numbers a tool can check.** 1920×1080, H.264 Baseline, yuv420p, AAC-LC 48 kHz.
 
-## 五、说明
+## Note
 
-本仓库只包含**文本产物**。成片视频（48 集，6.79 GB）、封面 PNG（74 张，103 MB）、角色素材图（203 张）未上传——体积超出合理范围。
+Only text artifacts are included. Finished video (48 films, 6.79 GB), cover PNGs (74 files, 103 MB) and character art (203 files) are excluded on size.
 
-## 许可证
+This repository is an archive — the active copy lives in [ai-drama-master-suite](https://github.com/YGtemple/ai-drama-master-suite) under `cases/`.
 
-MIT License
+## License
+
+MIT
